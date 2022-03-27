@@ -22,7 +22,6 @@ class Queue():
         else:
             print(self.instack[0])
 
-
 q = Queue()
 
 for _ in range(int(input())):
