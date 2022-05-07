@@ -11,12 +11,15 @@ class Solution:
         result = []
         nodeStack = []
 
-        while root or nodeStack:
-            while root:
+        while root or nodeStack: # whenever current node is not null or node stack is not empty
+            while root: # whenever current node is not null push it to stack, iterate its left node
                 nodeStack.append(root)
                 root = root.left
+            # whenever current node is null, pop its parent node
             root = nodeStack.pop()
+            # add current node's value to result
             result.append(root.val)
+            # iterate its right node
             root = root.right
 
         return result
