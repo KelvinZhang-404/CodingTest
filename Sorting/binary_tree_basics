@@ -1,0 +1,12 @@
+满二叉树
+
+完全二叉树
+    顺序存储方式（列表实现）
+        parent index: i
+        => left child index: 2 * i + 1
+        => right child index: 2 * i + 2
+
+        child index: i (no matter left or right)
+        => parent index: (i - 1) // 2
+
+非完全二叉树
