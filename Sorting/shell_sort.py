@@ -29,7 +29,7 @@ def insert_sort(li):
         li[j + 1] = temp  # 当循环结束，将提出来的数insert到当前索引后一位的位置
 
 
-li = list(range(10000))
+li = list(range(1000))
 import random, copy
 random.shuffle(li)
 
@@ -45,3 +45,9 @@ starttime = timeit.default_timer()
 insert_sort(li2)
 print(li2)
 print(f"time spent: {timeit.default_timer() - starttime}")
+
+lst = ['id01', 'id10', 'id02', 'id12', 'id03', 'id13']
+# lst_sorted = sorted(lst, key=lambda x: int(x[2:]))
+# print(lst_sorted)
+# lst.sort(key=lambda x: int(x[2:]))
+# print(lst)
