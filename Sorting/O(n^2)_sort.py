@@ -60,6 +60,6 @@ class SlowSorting:
 if __name__ == '__main__':
     li = [1, 2, 3, 7, 5, 8, 9, 4, 6]
     slowSorting = SlowSorting(li)
-    # slowSorting.insert_sort()
+    slowSorting.insert_sort()
     # slowSorting.bubble_sort()
-    slowSorting.select_sort()
+    # slowSorting.select_sort()
