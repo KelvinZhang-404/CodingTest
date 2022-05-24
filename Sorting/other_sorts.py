@@ -16,6 +16,7 @@ def sys_sort(li):
     li.sort()
 
 
+# 桶排序
 def bucket_sort(li, n=100, max_num=10000):
     buckets = [[] for _ in range(n)]  # 创建n个桶
     for var in li:
@@ -32,6 +33,7 @@ def bucket_sort(li, n=100, max_num=10000):
         li.extend(bucket)
 
 
+# 基数排序
 def radix_sort(li):
     max_num = max(li)  # 循环次数由最大数的位数决定
     it = 0
